@@ -1,12 +1,12 @@
 {
     "_class": "Entity",
-    "characterName": "Nyx",
+    "characterName": "Blade",
     "level": 42,
     "isAlive": true,
     "inventory": [
         "katana",
         "medkit",
-        "neural_link"
+        "coolGlasses"
     ],
     "stats": {
         "strength": 18,

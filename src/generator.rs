@@ -38,7 +38,6 @@ fn generate_class_recursive(
 for field in &fields {
     if let Some(nested) = &field.nested_object {
         if args.nest {
-            // 👇 Insert nested class into same file (inline append)
             let nested_render = tera
                 .render("class.tera", &{
                     let mut ctx = Context::new();
@@ -56,7 +55,6 @@ for field in &fields {
                     main.push_str(&nested_render);
                 });
         } else {
-            // 👇 Generate as separate file like before
             generate_class_recursive(nested, &field.csharp_type, tera, classes,args);
         }
     }
