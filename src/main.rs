@@ -26,6 +26,16 @@ fn main() {
                 .map(|s| s.to_string())
         })
         .unwrap_or(default_class_name);
+    
+    if !args.force {
+        if let Some(output_dir) = &args.output {
+            let class_file_path = format!("{}/{}.cs", output_dir, class_name);
+            if std::path::Path::new(&class_file_path).exists() {
+                println!("Class {} already exists. Use --force or -f to overwrite.", class_name);
+                return;
+            }
+        }
+    }
 
     let generated = generate_classes(&json_data, &class_name);
 

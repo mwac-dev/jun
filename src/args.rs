@@ -7,9 +7,12 @@ pub struct Args {
     #[arg(short, long)]
     pub input: String,
 
-    #[arg(short, long)]
+    #[arg(short, long, default_value = "./output")]
     pub output: Option<String>,
 
     #[arg(short, long)]
     pub class: Option<String>,
+
+    #[arg(short = 'f', long)]
+    pub force: bool,
 }
