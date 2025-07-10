@@ -115,5 +115,5 @@ public class Stats {
 
 ## ❤️ Credits
 
-Made with 🦀 Rust, powered by [Tera](https://tera.netlify.app/) for templating and [Clap](https://docs.rs/clap/latest/clap/) for CLI parsing.
+Made with 🦀 Rust, powered by [Tera](https://docs.rs/tera/latest/tera/) for templating and [Clap](https://docs.rs/clap/latest/clap/) for CLI parsing.
 
