@@ -37,7 +37,7 @@ fn main() {
         }
     }
 
-    let generated = generate_classes(&json_data, &class_name);
+    let generated = generate_classes(&json_data, &class_name, &args);
 
     for (name, content) in generated {
         if let Some(output_dir) = &args.output {

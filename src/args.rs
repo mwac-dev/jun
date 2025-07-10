@@ -15,4 +15,7 @@ pub struct Args {
 
     #[arg(short = 'f', long)]
     pub force: bool,
+    
+    #[arg(short, long, default_value = "false")]
+    pub nest: bool,
 }
