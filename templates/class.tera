@@ -1,0 +1,5 @@
+public class {{ class_name }} {
+{% for field in fields %}
+    public {{ field.csharp_type }} {{ field.name}} { get; set; }
+{% endfor %}
+}

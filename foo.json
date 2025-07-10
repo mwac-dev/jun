@@ -1,0 +1,17 @@
+{
+    "_class": "Entity",
+    "characterName": "Nyx",
+    "level": 42,
+    "isAlive": true,
+    "inventory": [
+        "katana",
+        "medkit",
+        "neural_link"
+    ],
+    "stats": {
+        "strength": 18,
+        "dexterity": 20,
+        "intelligence": 17
+    },
+    "lastCheckpoint": null
+}
